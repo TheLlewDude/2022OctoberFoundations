@@ -2,50 +2,193 @@
 <html>
     <head>
         <title>Examples of using links</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     </head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            background-color: antiquewhite;
+        }
+        header {
+            background-color: darkgrey;
+            font-size: 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        nav > a {
+            color: white;
+            font-family: Oswald, Ariel, sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Roboto Slab', 'Times New Roman', 'serif'
+            font-weight: 700;
+            padding-top: 2em;
+            padding-left: 35px;
+        }
+        p {
+            font-family: Oswald, Arial, sans-serif;
+            padding:16px 35px;
+            margin: 36px 24px 30px 20px;
+            border: 1px solid red;
+        }
+        main {
+            /* margin-top: 2em; */
+        }
+        span {
+            border: 2px solid darkred;
+            /* width: 20%; */
+            /* height: 10vh; */
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: inline-block;
+        }
+    </style>
     <body>
         <header>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#likes">Likes</a>
-                <a href="#places">Place</a>
-                <a href="https://www.google.com">Google</a>
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-            </nav>
-        </header>
-        <h1 id="home">Introduction</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nulla lacus. Praesent ipsum felis, sagittis ut enim vel, 
-            euismod volutpat ligula. Aliquam et euismod sem. Fusce maximus metus laoreet, pellentesque neque a, cursus mi. Pellentesque 
-            a sapien nunc. Morbi at dui tristique, dictum ex sed, lacinia orci. Nunc ullamcorper euismod ex sed vehicula. Ut tincidunt 
-            turpis sit amet quam feugiat, et aliquet mi ornare. Proin ut pulvinar tortor. Class aptent taciti sociosqu ad litora 
-            torquent per conubia nostra, per inceptos himenaeos. Sed consectetur orci ante, ut mollis massa faucibus eget. Donec 
-            dictum accumsan vehicula. Cras ac mauris quis arcu blandit pretium at quis massa. Mauris at pretium felis. Nam pharetra 
-            eu tellus et ultrices.
-            Nam viverra, orci quis fringilla feugiat, velit turpis lobortis arcu, tincidunt congue neque magna non nibh. Pellentesque habitant 
-            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Donec velit lorem, pretium ac quam non, semper 
-            sodales risus. Donec tortor augue, vestibulum a venenatis vitae, porttitor a arcu. Nullam quis lobortis lacus, nec pretium lorem. 
-            Quisque nec quam vestibulum, ultrices sapien vel, ultrices erat. Curabitur id lacinia diam. Aliquam sed lacus diam. Nam convallis 
-            ligula non tortor tempus facilisis. Sed ligula velit, suscipit sit amet mauris ut, commodo varius mi. Vestibulum eget nunc dui. 
-            Vestibulum tincidunt porttitor ex, quis ultrices nunc rhoncus in.
-            Duis pellentesque at dui vel blandit. Ut nec arcu elementum elit sagittis ult ricies vitae vitae neque. Suspendisse potenti. 
-            Praesent iaculis faucibus lobortis. Donec sed urna nec mi fringilla semper. Suspendisse eu ligula nec magna tincidunt convallis. 
-            Praesent gravida pretium ipsum id euismod. Suspendisse convallis quam quis risus sagittis placerat.
-            Sed consequat, turpis rutrum efficitur faucibus, eros enim eleifend nibh, quis condimentum tortor neque vel nisl. Nulla et nisi id 
-            sem consequat fermentum. Etiam imperdiet nisi quis odio maximus aliquam. Phasellus a velit ligula. Quisque sed mi sit amet odio 
-            accumsan auctor. Sed lacinia odio dolor, ac hendrerit risus sagittis non. Fusce consequat dui eget elit bibendum, non maximus dui
-            ultricies. Proin urna diam, fermentum eu accumsan ac, mollis eget ante. Aenean vel turpis sapien. Morbi in leo est.
-            Nunc nunc ipsum, porttitor nec scelerisque vel, accumsan ut quam. In feugiat ultricies lorem non rhoncus. Vivamus vestibulum ex 
-            nulla, ut finibus dolor lobortis at. Sed neque augue, sodales volutpat nunc nec, cursus dictum eros. Phasellus gravida felis nulla.
-            Maecenas eleifend odio eget consectetur congue. Sed eu mi purus. Nulla sit amet justo augue. Praesent eleifend ligula sit amet dui 
-            venenatis mollis. Quisque eget eleifend purus. Sed sodales feugiat volutpat. Praesent sed urna et massa auctor dictum nec vitae 
-            mauris. Sed commodo sed purus id varius. Sed pharetra sapien id mi vestibulum, et suscipit ante porta. Cras nunc nunc, fringilla eget 
-            tincidunt ut, egestas vitae nibh.
-        <p>
-            <h2 id="about"> </h2>
-            
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#likes">Likes</a>
+                    <a href="#places">Place</a>
+                    <a href="https://www.google.com">Google</a>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                </nav>
+            </header>
+        <main>
+            <h1 id="home">Introduction</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nulla lacus. Praesent ipsum felis, sagittis ut enim vel, 
+                euismod volutpat ligula. Aliquam et euismod sem. Fusce maximus metus laoreet, pellentesque neque a, cursus mi. Pellentesque 
+                a sapien nunc. Morbi at dui tristique, dictum ex sed, lacinia orci. Nunc ullamcorper euismod ex sed vehicula. Ut tincidunt 
+                turpis sit amet quam feugiat, et aliquet mi ornare. Proin ut pulvinar tortor. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos himenaeos. Sed consectetur orci ante, ut mollis massa faucibus eget. Donec 
+                dictum accumsan vehicula. Cras ac mauris quis arcu blandit pretium at quis massa. Mauris at pretium felis. Nam pharetra 
+                eu tellus et ultrices.
+                Nam viverra, orci quis fringilla feugiat, velit turpis lobortis arcu, tincidunt congue neque magna non nibh. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Donec velit lorem, pretium ac quam non, semper 
+                sodales risus. Donec tortor augue, vestibulum a venenatis vitae, porttitor a arcu. Nullam quis lobortis lacus, nec pretium lorem. 
+                Quisque nec quam vestibulum, ultrices sapien vel, ultrices erat. Curabitur id lacinia diam. Aliquam sed lacus diam. Nam convallis 
+                ligula non tortor tempus facilisis. Sed ligula velit, suscipit sit amet mauris ut, commodo varius mi. Vestibulum eget nunc dui. 
+                Vestibulum tincidunt porttitor ex, quis ultrices nunc rhoncus in.
+                Duis pellentesque at dui vel blandit. Ut nec arcu elementum elit sagittis ult ricies vitae vitae neque. Suspendisse potenti. 
+                Praesent iaculis faucibus lobortis. Donec sed urna nec mi fringilla semper. Suspendisse eu ligula nec magna tincidunt convallis. 
+                Praesent gravida pretium ipsum id euismod. Suspendisse convallis quam quis risus sagittis placerat.
+                Sed consequat, turpis rutrum efficitur faucibus, eros enim eleifend nibh, quis condimentum tortor neque vel nisl. Nulla et nisi id 
+                sem consequat fermentum. Etiam imperdiet nisi quis odio maximus aliquam. Phasellus a velit ligula. Quisque sed mi sit amet odio 
+                accumsan auctor. Sed lacinia odio dolor, ac hendrerit risus sagittis non. Fusce consequat dui eget elit bibendum, non maximus dui
+                ultricies. Proin urna diam, fermentum eu accumsan ac, mollis eget ante. Aenean vel turpis sapien. Morbi in leo est.
+                Nunc nunc ipsum, porttitor nec scelerisque vel, accumsan ut quam. In feugiat ultricies lorem non rhoncus. Vivamus vestibulum ex 
+                nulla, ut finibus dolor lobortis at. Sed neque augue, sodales volutpat nunc nec, cursus dictum eros. Phasellus gravida felis nulla.
+                Maecenas eleifend odio eget consectetur congue. Sed eu mi purus. Nulla sit amet justo augue. Praesent eleifend ligula sit amet dui 
+                venenatis mollis. Quisque eget eleifend purus. Sed sodales feugiat volutpat. Praesent sed urna et massa auctor dictum nec vitae 
+                mauris. Sed commodo sed purus id varius. Sed pharetra sapien id mi vestibulum, et suscipit ante porta. Cras nunc nunc, fringilla eget 
+                tincidunt ut, egestas vitae nibh.
             </p>
-        </p>
+            <h2 id="about">About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nulla lacus. Praesent ipsum felis, sagittis ut enim vel, 
+                euismod volutpat ligula. Aliquam et euismod sem. Fusce maximus metus laoreet, pellentesque neque a, cursus mi. Pellentesque 
+                a sapien nunc. Morbi at dui tristique, dictum ex sed, lacinia orci. Nunc ullamcorper euismod ex sed vehicula. Ut tincidunt 
+                turpis sit amet quam feugiat, et aliquet mi ornare. Proin ut pulvinar tortor. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos himenaeos. Sed consectetur orci ante, ut mollis massa faucibus eget. Donec 
+                dictum accumsan vehicula. Cras ac mauris quis arcu blandit pretium at quis massa. Mauris at pretium felis. Nam pharetra 
+                eu tellus et ultrices.
+                Nam viverra, orci quis fringilla feugiat, velit turpis lobortis arcu, tincidunt congue neque magna non nibh. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Donec velit lorem, pretium ac quam non, semper 
+                sodales risus. Donec tortor augue, vestibulum a venenatis vitae, porttitor a arcu. Nullam quis lobortis lacus, nec pretium lorem. 
+                Quisque nec quam vestibulum, ultrices sapien vel, ultrices erat. Curabitur id lacinia diam. Aliquam sed lacus diam. Nam convallis 
+                ligula non tortor tempus facilisis. Sed ligula velit, suscipit sit amet mauris ut, commodo varius mi. Vestibulum eget nunc dui. 
+                Vestibulum tincidunt porttitor ex, quis ultrices nunc rhoncus in.
+                Duis pellentesque at dui vel blandit. Ut nec arcu elementum elit sagittis ult ricies vitae vitae neque. Suspendisse potenti. 
+                Praesent iaculis faucibus lobortis. Donec sed urna nec mi fringilla semper. Suspendisse eu ligula nec magna tincidunt convallis. 
+                Praesent gravida pretium ipsum id euismod. Suspendisse convallis quam quis risus sagittis placerat.
+                Sed consequat, turpis rutrum efficitur faucibus, eros enim eleifend nibh, quis condimentum tortor neque vel nisl. Nulla et nisi id 
+                sem consequat fermentum. Etiam imperdiet nisi quis odio maximus aliquam. Phasellus a velit ligula. Quisque sed mi sit amet odio 
+                accumsan auctor. Sed lacinia odio dolor, ac hendrerit risus sagittis non. Fusce consequat dui eget elit bibendum, non maximus dui
+                ultricies. Proin urna diam, fermentum eu accumsan ac, mollis eget ante. Aenean vel turpis sapien. Morbi in leo est.
+                Nunc nunc ipsum, porttitor nec scelerisque vel, accumsan ut quam. In feugiat ultricies lorem non rhoncus. Vivamus vestibulum ex 
+                nulla, ut finibus dolor lobortis at. Sed neque augue, sodales volutpat nunc nec, cursus dictum eros. Phasellus gravida felis nulla.
+                Maecenas eleifend odio eget consectetur congue. Sed eu mi purus. Nulla sit amet justo augue. Praesent eleifend ligula sit amet dui 
+                venenatis mollis. Quisque eget eleifend purus. Sed sodales feugiat volutpat. Praesent sed urna et massa auctor dictum nec vitae 
+                mauris. Sed commodo sed purus id varius. Sed pharetra sapien id mi vestibulum, et suscipit ante porta. Cras nunc nunc, fringilla eget 
+                tincidunt ut, egestas vitae nibh.
+            </p>
+            <h2 id="likes">Likes</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nulla lacus. Praesent ipsum felis, sagittis ut enim vel, 
+                euismod volutpat ligula. Aliquam et euismod sem. Fusce maximus metus laoreet, pellentesque neque a, cursus mi. Pellentesque 
+                a sapien nunc. Morbi at dui tristique, dictum ex sed, lacinia orci. Nunc ullamcorper euismod ex sed vehicula. Ut tincidunt 
+                turpis sit amet quam feugiat, et aliquet mi ornare. Proin ut pulvinar tortor. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos himenaeos. Sed consectetur orci ante, ut mollis massa faucibus eget. Donec 
+                dictum accumsan vehicula. Cras ac mauris quis arcu blandit pretium at quis massa. Mauris at pretium felis. Nam pharetra 
+                eu tellus et ultrices.
+                Nam viverra, orci quis fringilla feugiat, velit turpis lobortis arcu, tincidunt congue neque magna non nibh. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Donec velit lorem, pretium ac quam non, semper 
+                sodales risus. Donec tortor augue, vestibulum a venenatis vitae, porttitor a arcu. Nullam quis lobortis lacus, nec pretium lorem. 
+                Quisque nec quam vestibulum, ultrices sapien vel, ultrices erat. Curabitur id lacinia diam. Aliquam sed lacus diam. Nam convallis 
+                ligula non tortor tempus facilisis. Sed ligula velit, suscipit sit amet mauris ut, commodo varius mi. Vestibulum eget nunc dui. 
+                Vestibulum tincidunt porttitor ex, quis ultrices nunc rhoncus in.
+                Duis pellentesque at dui vel blandit. Ut nec arcu elementum elit sagittis ult ricies vitae vitae neque. Suspendisse potenti. 
+                Praesent iaculis faucibus lobortis. Donec sed urna nec mi fringilla semper. Suspendisse eu ligula nec magna tincidunt convallis. 
+                Praesent gravida pretium ipsum id euismod. Suspendisse convallis quam quis risus sagittis placerat.
+                Sed consequat, turpis rutrum efficitur faucibus, eros enim eleifend nibh, quis condimentum tortor neque vel nisl. Nulla et nisi id 
+                sem consequat fermentum. Etiam imperdiet nisi quis odio maximus aliquam. Phasellus a velit ligula. Quisque sed mi sit amet odio 
+                accumsan auctor. Sed lacinia odio dolor, ac hendrerit risus sagittis non. Fusce consequat dui eget elit bibendum, non maximus dui
+                ultricies. Proin urna diam, fermentum eu accumsan ac, mollis eget ante. Aenean vel turpis sapien. Morbi in leo est.
+                Nunc nunc ipsum, porttitor nec scelerisque vel, accumsan ut quam. In feugiat ultricies lorem non rhoncus. Vivamus vestibulum ex 
+                nulla, ut finibus dolor lobortis at. Sed neque augue, sodales volutpat nunc nec, cursus dictum eros. Phasellus gravida felis nulla.
+                Maecenas eleifend odio eget consectetur congue. Sed eu mi purus. Nulla sit amet justo augue. Praesent eleifend ligula sit amet dui 
+                venenatis mollis. Quisque eget eleifend purus. Sed sodales feugiat volutpat. Praesent sed urna et massa auctor dictum nec vitae 
+                mauris. Sed commodo sed purus id varius. Sed pharetra sapien id mi vestibulum, et suscipit ante porta. Cras nunc nunc, fringilla eget 
+                tincidunt ut, egestas vitae nibh.
+            </p>
+            <h2 id="places">Place</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nulla lacus. Praesent ipsum felis, sagittis ut enim vel, 
+                euismod volutpat ligula. Aliquam et euismod sem. Fusce maximus metus laoreet, pellentesque neque a, cursus mi. Pellentesque 
+                a sapien nunc. Morbi at dui tristique, dictum ex sed, lacinia orci. Nunc ullamcorper euismod ex sed vehicula. Ut tincidunt 
+                turpis sit amet quam feugiat, et aliquet mi ornare. Proin ut pulvinar tortor. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos himenaeos. Sed consectetur orci ante, ut mollis massa faucibus eget. Donec 
+                dictum accumsan vehicula. Cras ac mauris quis arcu blandit pretium at quis massa. Mauris at pretium felis. Nam pharetra 
+                eu tellus et ultrices.
+                Nam viverra, orci quis fringilla feugiat, velit turpis lobortis arcu, tincidunt congue neque magna non nibh. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Donec velit lorem, pretium ac quam non, semper 
+                sodales risus. Donec tortor augue, vestibulum a venenatis vitae, porttitor a arcu. Nullam quis lobortis lacus, nec pretium lorem. 
+                Quisque nec quam vestibulum, ultrices sapien vel, ultrices erat. Curabitur id lacinia diam. Aliquam sed lacus diam. Nam convallis 
+                ligula non tortor tempus facilisis. Sed ligula velit, suscipit sit amet mauris ut, commodo varius mi. Vestibulum eget nunc dui. 
+                Vestibulum tincidunt porttitor ex, quis ultrices nunc rhoncus in.
+                Duis pellentesque at dui vel blandit. Ut nec arcu elementum elit sagittis ult ricies vitae vitae neque. Suspendisse potenti. 
+                Praesent iaculis faucibus lobortis. Donec sed urna nec mi fringilla semper. Suspendisse eu ligula nec magna tincidunt convallis. 
+                Praesent gravida pretium ipsum id euismod. Suspendisse convallis quam quis risus sagittis placerat.
+                Sed consequat, turpis rutrum efficitur faucibus, eros enim eleifend nibh, quis condimentum tortor neque vel nisl. Nulla et nisi id 
+                sem consequat fermentum. Etiam imperdiet nisi quis odio maximus aliquam. Phasellus a velit ligula. Quisque sed mi sit amet odio 
+                accumsan auctor. Sed lacinia odio dolor, ac hendrerit risus sagittis non. Fusce consequat dui eget elit bibendum, non maximus dui
+                ultricies. Proin urna diam, fermentum eu accumsan ac, mollis eget ante. Aenean vel turpis sapien. Morbi in leo est.
+                Nunc nunc ipsum, porttitor nec scelerisque vel, accumsan ut quam. In feugiat ultricies lorem non rhoncus. Vivamus vestibulum ex 
+                nulla, ut finibus dolor lobortis at. Sed neque augue, sodales volutpat nunc nec, cursus dictum eros. Phasellus gravida felis nulla.
+                Maecenas eleifend odio eget consectetur congue. Sed eu mi purus. Nulla sit amet justo augue. Praesent eleifend ligula sit amet dui 
+                venenatis mollis. Quisque eget eleifend purus. Sed sodales feugiat volutpat. Praesent sed urna et massa auctor dictum nec vitae 
+                mauris. Sed commodo sed purus id varius. Sed pharetra sapien id mi vestibulum, et suscipit ante porta. Cras nunc nunc, fringilla eget 
+                tincidunt ut, egestas vitae nibh.
+            </p>
+            <span>dictum</span>
+    </main>
     </body>
 </html>

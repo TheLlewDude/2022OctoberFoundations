@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16.; /* 24px */
+}
+body {
+    margin:0;
+    /* background-color:white; */
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+nav {
+    background-color:white;
+    /* color:white; */
+    padding: 0.25em;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+#home {
+    background-image: url("../images/twinfeats-background.jpg");
+}
+article {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 4rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.title {
+    font-size: 3em;
+    line-height: .9;
+}
+.hero {
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#text-spread {
+    letter-spacing: 3px;
+}
+.tagline {
+    margin-top: 5px;
+}
+img {
+    width: 2em;
+}
+.photobox {
+    display: flex;
+}
+.photobox img {
+    width: 22ch;
+}
+.photobox > last-child {
+    text-align: left;
+}
+.photobox figure {
+    font-size: .6em;
+    margin-left: 0;
+    margin-top: .3rem;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+.pinkish {
+    color: #D93D86;
+}
+.greenish {
+    color: #80BFAD;
+}
+.purplish {
+    color: #8360A6;
+}
+.yellowish {
+    color: #F2A413;
+}
