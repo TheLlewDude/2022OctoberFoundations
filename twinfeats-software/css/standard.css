@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 16.; /* 24px */
+    font-size: 16px; 
+    scroll-behavior: smooth;
 }
 body {
     margin:0;
@@ -20,8 +21,12 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 }
-
+.logo {
+    width: 9ch;
+    font-size: 1.5em;
+}
 a {
     color:black;
     text-decoration:none;
@@ -40,6 +45,24 @@ article {
     padding-top: 4rem;
     padding-left: 20vw;
     padding-right: 20vw;
+    position: relative;
+}
+article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.1;
+    z-index: -1;
+}
+#about::before {
+    background-image: url("../images/programming-image.jpg");
 }
 .title {
     font-size: 3em;
@@ -61,11 +84,17 @@ img {
 }
 .photobox {
     display: flex;
+    flex-direction: row;
+    margin-top; 1em;
+    /* clear: left; */
 }
 .photobox img {
     width: 22ch;
+    border: transparent solid 7px;
+    border-color: #D93D86 #80BFAD #8360A6 #F2A413;
+    border-radius: 50%;
 }
-.photobox > last-child {
+.photobox > :last-child {
     text-align: left;
 }
 .photobox figure {
@@ -74,6 +103,11 @@ img {
     margin-top: .3rem;
     margin-right: 1em;
     margin-bottom: 2em;
+    /* float: left; */
+}
+figure {
+    margin: 0;
+    margin-right: 1em;
 }
 .pinkish {
     color: #D93D86;
@@ -86,4 +120,19 @@ img {
 }
 .yellowish {
     color: #F2A413;
+}
+.homeLink img {
+    vertical-align: middle;
+}
+#about > photobox:nth-of-type(2) {
+    padding-top: 1em;
+}
+#services > h2 {
+    font-size: 1.25em;
+}
+#services > p {
+    text-align: left;
+}
+#applications > p {
+    text-align: left;
 }
